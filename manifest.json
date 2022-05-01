@@ -1,0 +1,16 @@
+{
+  "name": "Chrome Hack",
+  "description": "Customize Chrome behaviours with css and javascript",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "css": ["scripts/github-wide.css"]
+    },
+    {
+      "matches": ["https://gist.github.com/"],
+      "css": ["scripts/gist-wide.css"]
+    }
+  ]
+}
